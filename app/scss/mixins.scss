@@ -1,0 +1,15 @@
+@mixin display-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font-mont {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin main-layout {
+    padding: 20px 150px;
+    margin: 0 auto;
+    max-width: 1400px;
+}
