@@ -3,6 +3,7 @@
 
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -44,21 +45,20 @@ section, header {
             li {
                 text-decoration: none;
                 font-size: 14px;
-                position: relative;
                 opacity: 0.69;
-                transition: $main-transition;
 
                 a {
                     text-decoration: none;
                     color: white;
                     opacity: 69px;
+                    position: relative;
+                    transition: $main-transition;
                     padding: 20px 0;
                 }
 
                 a:after {
                     content: '';
                     position: absolute;
-                    bottom: -8px;
                     left: 0;
                     height: 2px;
                     opacity: 0;
@@ -124,6 +124,7 @@ section, header {
                         outline: none;
                         transition: $main-transition;
                         margin: 40px 0;
+                        cursor: pointer;
                     }
 
                     button:active {
@@ -323,6 +324,7 @@ section, header {
 }
 
 .second-box {
+    scroll-margin-top: -1vh;
     background-image: url("nuotraukos/second.jpg");
     min-height: 80vh;
     background-position: center;
@@ -340,6 +342,7 @@ section, header {
 
 .third-box {
     background-color: $black;
+    scroll-margin-top: 9vh;
 
     .third-main {
         min-height: 80vh;
@@ -485,6 +488,7 @@ section, header {
 
 .fifth-box {
     background-color: $blue;
+    scroll-margin-top: 9vh;
 
     .fifth-main {
         @include main-layout;
@@ -568,7 +572,7 @@ section, header {
             }
 
             .fifth-bot:hover {
-                transform: scale(1.01);
+                transform: scale(1.02) translateY(-5px);
             }
 
             .fifth-bot-nd {
@@ -588,6 +592,7 @@ section, header {
 
 .sixth-box {
     background-color: $white;
+    scroll-margin-top: 9vh;
 
     .sixth-main {
         @include main-layout;
@@ -614,11 +619,12 @@ section, header {
 
 .seventh-box {
     background-color: $red;
+    scroll-margin-top: 9vh;
 
     .seventh-main {
         @include main-layout;
         @include display-flex;
-        min-height: 80vh;
+        min-height: 75vh;
         flex-direction: column;
         color: white;
 
