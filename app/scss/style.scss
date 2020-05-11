@@ -59,6 +59,7 @@ section, header {
                 a:after {
                     content: '';
                     position: absolute;
+                    bottom: -10px;
                     left: 0;
                     height: 2px;
                     opacity: 0;
