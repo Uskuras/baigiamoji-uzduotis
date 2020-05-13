@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baigiamoji užduotis</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,13 +40,16 @@
                             </div>
                             <p>Your details</p>
                             <div class="name form-input">
-                                <input type="text" id="name" placeholder="First name" name="firstname">
+                                <input type="text" id="name" required placeholder="First name" name="firstname">
+                                <span class="error"><p id="name_error"></p></span>
                             </div>
                             <div class="surname form-input">
-                                <input type="text" id="surname" placeholder="Last name" name="lastname">
+                                <input type="text" id="surname" required placeholder="Last name" name="lastname">
+                                <span class="error"><p id="email_error"></p></span>
                             </div>
                             <div class="phone form-input">
-                                <input type="tel" id="phone" placeholder="Phone number" name="phone">
+                                <input type="tel" id="phone" required placeholder="Phone number" name="phone">
+                                <span class="error"><p id="telephone_error"></p></span>
                             </div>
                             <div class="subscription">
                                 <label for="">Type of subscription</label>
@@ -238,7 +242,85 @@
     <section class="reviews-box" id="reviews">
         <div class="reviews-main">
             <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
-        </div>
+            <div class="reviews-slideshow swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper-message">
+                            <p>Porro corrupti minus tenetur nemo dolores earum asperiores perspiciatis, doloribus enim mollitia quasi, aliquam quam accusamus! Rerum, magnam!</p>
+                        </div>
+                        <div class="swiper-bot">
+                            <img src="nuotraukos/profile1.jpg" alt="Profile picture">
+                            <div class="name-prof">
+                                <h3>John L.</h3>
+                                <p>Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-message">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                        </div>
+                        <div class="swiper-bot">
+                            <img src="nuotraukos/profile2.jpg" alt="Profile picture">
+                            <div class="name-prof">
+                                <h3>Sara W.</h3>
+                                <p>Freelancer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-message">
+                            <p>Eveniet corporis ipsa mollitia, beatae aspernatur sit libero dolor temporibus molestias, velit at veniam praesentium. Est rem at in ipsam, ad molestias!</p>
+                        </div>
+                        <div class="swiper-bot">
+                            <img src="nuotraukos/profile3.jpg" alt="Profile picture">
+                            <div class="name-prof">
+                                <h3>Nikki C.</h3>
+                                <p>Sales Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-message">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                        </div>
+                        <div class="swiper-bot">
+                            <img src="nuotraukos/profile4.jpg" alt="Profile picture">
+                            <div class="name-prof">
+                                <h3>Yana P.</h3>
+                                <p>Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-message">
+                            <p> Doloribus accusamus expedita repellat similique odio aspernatur ex.</p>
+                        </div>
+                        <div class="swiper-bot">
+                            <img src="nuotraukos/profile5.jpg" alt="Profile picture">
+                            <div class="name-prof">
+                                <h3>Emma S.</h3>
+                                <p>Purchasing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-message">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            </p>
+                        </div>
+                        <div class="swiper-bot">
+                            <img src="nuotraukos/profile6.jpg" alt="Profile picture">
+                            <div class="name-prof">
+                                <h3>Laszlo Z.</h3>
+                                <p>Entrepreneur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> 
     </section>
     <section class="contact-box" id="contact">
         <div class="contact-main">
@@ -247,13 +329,13 @@
             <div class="contact-form">
                 <form>
                     <div class="name form-input">
-                        <input type="text" id="name" placeholder="First name" name="firstname">
+                        <input type="text" id="name" required placeholder="First name" name="firstname">
                     </div>
                     <div class="surname form-input">
-                        <input type="text" id="surname" placeholder="Last name" name="lastname">
+                        <input type="text" id="surname" required placeholder="Last name" name="lastname">
                     </div>
                     <div class="phone form-input">
-                        <input type="tel" id="phone" placeholder="Phone number" name="phone">
+                        <input type="tel" id="phone" required placeholder="Phone number" name="phone">
                     </div>
                         <div class="contact-us-box">
                             <input name="contact-us-radio" type="radio" id="personal" checked>
@@ -292,6 +374,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
