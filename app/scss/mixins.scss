@@ -13,3 +13,32 @@
     margin: 0 auto;
     max-width: 1400px;
 }
+
+@mixin main-layout1024 {
+    padding-right: 100px;
+    padding-left: 100px;
+    max-width: 1024px;
+}
+
+@mixin padding-top-bot {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@mixin main-layout768 {
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 668px;
+}
+
+@mixin main-layout421 {
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 421px;
+}
+
+@mixin main-layout420 {
+    padding-right: 20px;
+    padding-left: 20px;
+    max-width: 320px;
+}

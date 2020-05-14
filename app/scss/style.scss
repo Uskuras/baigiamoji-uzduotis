@@ -109,6 +109,7 @@ section, footer  {
             background-color: rgba(28, 28, 28, 0.69);
 
             .homepage-main {
+                @include padding-top-bot;
                 @include main-layout;
                 min-height: inherit;
                 display: flex;
@@ -302,7 +303,6 @@ section, footer  {
             align-items: center;
 
             .homepage-footer-text {
-                min-width: 380px;
                 width: 400px;
                 line-height: 20px;
 
@@ -358,6 +358,8 @@ section, footer  {
 
         .features-main {
             @include main-layout;
+            @include padding-top-bot;
+            padding-bottom: 50px;
             display: flex;
             align-items: center;
             min-height: inherit;
@@ -405,13 +407,15 @@ section, footer  {
                     display: none;
                     color: white;
                     animation: fade-in 0.35s linear;
+                    align-items: center;
+                    justify-content: center;
 
                     .feature-text {
                         display: flex;
                         justify-content: center;
                         flex-direction: column;
-                        min-width: 520px;
                         margin-right: 70px;
+                        max-width: 520px;
 
                         h2 {
                             font-size: 36px;
@@ -429,8 +433,8 @@ section, footer  {
                         display: flex;
                         flex-direction: row;
                         flex-wrap: wrap;
-                        width: 380px;
-                        height: 380px;
+                        max-width: 380px;
+                        max-height: 380px;
 
                         .picture-small {
                             transition: $main-transition;
@@ -527,6 +531,7 @@ section, footer  {
     .about-main {
         min-height: inherit;
         @include main-layout;
+        @include padding-top-bot;
         @include display-flex;
         justify-content: space-between;
 
@@ -601,9 +606,11 @@ section, footer  {
 
 .pros-box {
     background-color: white;
+    padding: 20px 0;
 
     .pros-main {
         @include main-layout;
+        @include padding-top-bot;
         min-height: 80vh;
         display: flex;
         align-items: center;
@@ -631,15 +638,16 @@ section, footer  {
 
         .pros-main-bottom {
             display: flex;
-            justify-content: space-between;
+            max-width: 1100px;
             flex-direction: row;
+            justify-content: center;
             flex-wrap: wrap;
 
             .pros-bot {
                 @include display-flex;
                 justify-content: flex-start;
                 flex-direction: column;
-                max-width: 280px;
+                max-width: 285px;
                 margin: 0 40px;
                 transition: $main-transition;
 
@@ -673,6 +681,7 @@ section, footer  {
     .pricing-main {
         @include main-layout;
         @include display-flex;
+        @include padding-top-bot;
         min-height: calc(100vh - 72px);
         color: white;
         flex-direction: column;
@@ -693,15 +702,14 @@ section, footer  {
         }
 
         .pricing-main-bottom {
-            min-width: 1100px;
             margin-top: 40px;
+            min-width: 1100px;
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            flex-wrap: wrap;    
 
             .pricing-bot {
-                min-width: 340px;
+                min-width: 330px;
                 border-radius: 5px;
                 overflow: hidden;
                 transition: $main-transition;
@@ -777,6 +785,7 @@ section, footer  {
     .reviews-main {  
         @include main-layout;
         @include display-flex;
+        @include padding-top-bot;
         min-height: 80vh;
         flex-direction: column;
         
@@ -797,10 +806,9 @@ section, footer  {
 
         .swiper-container {
             margin: 0 auto;
-            max-width: 1100px;
-            width: 100%;
 
             .swiper-wrapper {
+                max-width: 960px;
                 padding-bottom: 85px;
                 display: flex;
                 align-items: center;
@@ -889,6 +897,7 @@ section, footer  {
     .contact-main {
         @include main-layout;
         @include display-flex;
+        @include padding-top-bot;
         min-height: calc(100vh - 72px - 105px);
         flex-direction: column;
         color: white;
@@ -911,6 +920,7 @@ section, footer  {
         .contact-form {
             margin-top: 25px;
             max-width: 390px;
+            max-height: 340px;
             background-color: white;
             border-radius: 5px;
             overflow: hidden;
@@ -1053,3 +1063,7 @@ section, footer  {
     }
 }
 
+@import 'media1024to1300';
+@import 'media768to1023';
+@import 'media421to767';
+@import 'media420';

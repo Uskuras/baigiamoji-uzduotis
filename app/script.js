@@ -3,8 +3,6 @@
 // Initializing swiper for reviews section
 
 var reviewsSwiper = new Swiper ('.reviews-slideshow', {
-    slidesPerView: 1,
-    spaceBetween: 190,
 
     pagination: {
       el: '.swiper-pagination',
@@ -12,14 +10,27 @@ var reviewsSwiper = new Swiper ('.reviews-slideshow', {
     },
 
     breakpoints: {
-        // when window width is >= 320px
-        700: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 280,
+      },
+
+      421: {
+        slidesPerView: 1,
+        spaceBetween: 361,
+      },
+        768: {
           slidesPerView: 2,
-          spaceBetween: 90,
+          spaceBetween: 88,
         },
-        // when window width is >= 480px
-        1060: {
+        1024: {
           slidesPerView: 3,
+          spaceBetween: 50,
+        },
+
+        1401: {
+          slidesPerView: 3,
+          spaceBetween: 120,
         },
       }
 });
