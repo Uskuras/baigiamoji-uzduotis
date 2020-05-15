@@ -90,6 +90,10 @@ section, footer  {
             }
         }
 
+        ul li:first-child {
+            display: none;
+        }
+
         .nav__toggle {
             display: none;
         }
@@ -271,14 +275,16 @@ section, footer  {
                                     }
 
                                     .non-checked {
-                                        height: 13px;
-                                        width: 13px;
+                                        min-height: 13px;
+                                        min-width: 13px;
                                         border: 1px solid $green;
                                         border-radius: 50%;
                                         @include display-flex;
 
                                         .checked {
-                                            border: 3px solid $green;
+                                            height: 7px;
+                                            width: 7px;
+                                            background-color: $green;
                                             border-radius: 50%;
                                             opacity: 0;
                                         }

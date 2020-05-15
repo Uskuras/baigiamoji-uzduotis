@@ -15,25 +15,6 @@
                 position: relative;
             }
 
-            .main-logo {
-                position: relative;
-
-                img {
-                    display: none;
-                }
-            }
-
-            .main-logo:before {
-                content: '';
-                height: 35px;
-                width: 44.5px;
-                background-image: url("nuotraukos/minilogo.svg");
-                background-size: cover;
-                position: absolute;
-                top: -15px;
-                left: 0;
-            }
-
             ul {
                 flex-direction: column;
                 justify-content: flex-start;
@@ -48,6 +29,10 @@
                         display: none;
                     }
                 }
+            }
+
+            ul li:first-child {
+                display: block;
             }
 
             .nav__toggle {
@@ -463,10 +448,10 @@
         
         &__item {
             opacity:0;
-            transition: all .25s cubic-bezier(0.000, 0.995, 0.990, 1.000) .3s;
+            transition: all .2s cubic-bezier(0.000, 0.195, 0.990, 1.000) .2s;
         }
 
-        @for $i from 1 through 5 {
+        @for $i from 1 through 6 {
             &__item:nth-child(#{$i}){
                 transform:translateY(-140px * $i);
             }
@@ -542,7 +527,7 @@
             
             transform: scale(0);
             transform-origin:50% 50%;
-            transition: transform .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+            transition: transform .3s cubic-bezier(0.755, 0.050, 0.855, 0.060);
         }
     }
   
