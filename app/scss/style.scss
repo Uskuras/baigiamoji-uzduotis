@@ -142,6 +142,10 @@ section, footer  {
                         cursor: pointer;
                     }
 
+                    button:hover {
+                        transform: scale(1.05);
+                    }
+
                     button:active {
                         transform: scale(0.95);
                     }
@@ -404,6 +408,7 @@ section, footer  {
 
                 .nav-block.active {
                     background-color: #E27866;
+                    box-shadow: 4px 4px 12px 3px rgba(0,0,0,0.3);
                 }
 
                 .nav-block.active span {
@@ -523,6 +528,7 @@ section, footer  {
 
                         .picture-small:hover:before, .picture-large:hover:before {
                             opacity: 1;
+                            box-shadow: 4px 4px 14px 3px rgba(0,0,0,0.3);
                         }
                     }
                 }
@@ -936,6 +942,7 @@ section, footer  {
             border-radius: 5px;
             overflow: hidden;
             padding: 35px 65px;
+            box-shadow: 4px 4px 12px 3px rgba(0,0,0,0.16);
 
             form {
                 display: flex;
