@@ -3,10 +3,17 @@
         @include main-layout768;
 
         ul {
-            min-width: 300px;
 
             li {
                 font-size: 13px;
+
+                a {
+                    padding: 10px;
+                }
+
+                a:after {
+                    bottom: -18px;
+                }
             }
         }
    }
